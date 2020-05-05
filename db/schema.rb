@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_04_30_125407) do
   create_table "transactions", force: :cascade do |t|
     t.datetime "date"
     t.integer "amount"
+    t.string "status"
     t.integer "user_id", null: false
     t.integer "currency_id", null: false
     t.datetime "created_at", precision: 6, null: false
