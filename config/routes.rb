@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  post "transactions/send/:id", to: 'transactions#sent'
+  post "/transactions", to: 'transactions#sent'
   resources :transactions
   resources :currencies
   resources :users

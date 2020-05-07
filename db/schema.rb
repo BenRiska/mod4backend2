@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_04_30_125407) do
     t.datetime "date"
     t.integer "amount"
     t.string "status"
+    t.string "message"
     t.integer "user_id", null: false
     t.integer "currency_id", null: false
     t.datetime "created_at", precision: 6, null: false
